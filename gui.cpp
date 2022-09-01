@@ -6,7 +6,7 @@
 static bool chams = false;
 static bool Style = false;
 static bool Crosshair = false;
-static bool FPSGraph = false;
+static bool FPS = false;
 static bool EditColor= false;
 
 
@@ -248,17 +248,17 @@ void gui::CreateHWindow(
 			ImGui::SetNextWindowPos({ 0, 0 });
 			ImGui::SetNextWindowSize({ WIDTH, HEIGHT });
 			
-			ImGui::Begin("Chloroline B.1 [Dev Build]", &exit, ImGuiWindowFlags_NoResize | ImGuiWindowFlags_NoSavedSettings | ImGuiWindowFlags_NoCollapse | ImGuiWindowFlags_NoMove);
+			ImGui::Begin("Title of Imgui [Dev Build]", &exit, ImGuiWindowFlags_NoResize | ImGuiWindowFlags_NoSavedSettings | ImGuiWindowFlags_NoCollapse | ImGuiWindowFlags_NoMove);
 			ImGui::TextColored(ImVec4(1, 0, 1, 1), "Cheats");
 			
-			ImGui::Checkbox("Custom Crosshair", &Crosshair);
+			ImGui::Checkbox("Option 1", &Crosshair);
 			
 			if (Crosshair)
 			{
 			
 
 			}
-			ImGui::Checkbox("FPS Graph", &FPSGraph);
+			ImGui::Checkbox("Option 2", &FPS);
 			if (FPSGraph)
 			{
 			//Show FPS Graph
@@ -267,7 +267,7 @@ void gui::CreateHWindow(
 
 
 
-			ImGui::Checkbox("Chams", &chams);
+			ImGui::Checkbox("Option 3", &chams);
 			if (chams)
 			{
 				
